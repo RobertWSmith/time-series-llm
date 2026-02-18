@@ -23,6 +23,11 @@ RUN pip install --no-cache-dir torch torchvision --index-url https://download.py
 RUN pip install --no-cache-dir autogluon pandas numpy scikit-learn matplotlib seaborn
 RUN pip install --no-cache-dir jupyter notebook
 
+RUN git config --global user.name "Robert Smith"
+RUN git config --global user.email "robert.w.smith08@gmail.com"
+
+RUN --mount=type=ssh git clone git@github.com:RobertWSmith/time-series-llm.git
+
 # Set up working directory
 WORKDIR /notebooks
 
