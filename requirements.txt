@@ -1,0 +1,6 @@
+numpy~=2.1.3
+pandas~=2.3.3
+autogluon~=1.5.0
+matplotlib~=3.10.8
+chronos-forecasting[training]~=2.2.2
+sktime~=0.40.1
