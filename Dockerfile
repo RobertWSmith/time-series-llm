@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /notebooks
 COPY requirements.txt .
 COPY *.ipynb .
-COPY m5-forecasting-accuracy/* m5-forecasting-accuracy/
+COPY m5-forecasting-accuracy/* m5-forecasting-accuracy
 
 RUN python3 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
